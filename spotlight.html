@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENHYPEN Spotlight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">ENHYPEN Spotlight</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="spotlight.html" class="active">Spotlight</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Top Artist Spotlight: ENHYPEN</h2>
+            <p>
+                I became a fan of ENHYPEN in 2023, and have never stopped listening to their music since. They continue to shape my music taste with their incredible storytelling, polished discography, and breathtaking performances. I saw them in concert in 2024 and 2025, and plan to attend many more performances.
+            </p>
+        </div>
+    </section>
+
+    <p>
+        <img src="images/enha1.jpeg" alt="ENHYPEN Group Photo">
+    </p>
+
+    <!-- GROUP INFO -->
+    <section class="group-info">
+        <h2>About ENHYPEN</h2>
+        <p>
+            ENHYPEN is a seven member K-pop boy group formed through the survival show I-LAND known for their immersive concept, unique sound, and strong performance identity. Since their debut, they have established themselves as one of the most versatile and exciting groups of their generation.
+        </p>
+
+        <ul class="group-details">
+            <li><strong>Debut Year:</strong> 2020</li>
+            <li><strong>Genre:</strong> K-pop</li>
+            <li><strong>Label:</strong> BELIFT LAB</li>
+        </ul>
+    </section>
+
+    <!-- FAVORITES SECTION -->
+    <section class="favorites">
+        <h2>Why I Love Their Music</h2>
+        <p>
+            Their work blends emotional vocals, cinematic storytelling, atmospheric production. Their discography is amazingly versatile, with songs ranging from yearning ballads to upbeat anthems. No matter the mood, there’s always an ENHYPEN song that fits perfectly.
+        </p>
+
+        <h3>Favorite Songs</h3>
+        <ul class="song-list">
+            <li><a href="https://youtu.be/wXFLzODIdUI?si=g0FSYNWOtPwUy5E3" target="_blank">Bite Me</a></li>
+            <li><a href="https://youtu.be/JsYvBibzY30?si=njpoqDJXKZhjl7hd" target="_blank">Still Monster</a></li>
+            <li><a href="https://youtu.be/wrCBICNLKnA?si=EHgFBspKXtP-nb6U" target="_blank">Shout Out</a></li>
+            <li><a href="https://youtu.be/rDolt3jJRsM?si=hbnj3BOE8tA_4KW2" target="_blank">No Doubt</a></li>
+        </ul>
+
+        <h3>Favorite Albums</h3>
+        <ul class="song-list">
+            <li><a href="https://open.spotify.com/album/05I8FltCMnGa3kE38mpOkL?si=OlPxN0VlQCewhhazVsq36A" target="_blank">ROMANCE: UNTOLD</a></li>
+            <li><a href="https://open.spotify.com/album/7q65W5gVANjh1j1KXLeU0f?si=ZShVxK3rRJ2J-UgJlWUqNQ" target="_blank">DARK BLOOD</a></li>
+            <li><a href="https://open.spotify.com/album/5J8MNLLViH5zqM6VoGErz8?si=FOLW4KXyQSC4ck9Is7wAjg" target="_blank">MANIFESTO: DAY 1</a></li>
+        </ul>
+    </section>
+
+    <!-- MEMBER SELECTOR -->
+    <section class="members">
+    <h2>Meet the Members</h2>
+
+    <div class="member-row">
+        <button onclick="showMember('heeseung')">
+            <img src="images/heeseung.jpeg" alt="Heeseung">
+            <span>Heeseung</span>
+        </button>
+
+        <button onclick="showMember('jay')">
+            <img src="images/husband.jpeg" alt="Jay">
+            <span>Jay</span>
+        </button>
+
+        <button onclick="showMember('jake')">
+            <img src="images/jake.jpeg" alt="Jake">
+            <span>Jake</span>
+        </button>
+
+        <button onclick="showMember('sunghoon')">
+            <img src="images/sunghoon.jpeg" alt="Sunghoon">
+            <span>Sunghoon</span>
+        </button>
+
+        <button onclick="showMember('sunoo')">
+            <img src="images/sunoo.jpeg" alt="Sunoo">
+            <span>Sunoo</span>
+        </button>
+
+        <button onclick="showMember('jungwon')">
+            <img src="images/jungwon.jpeg" alt="Jungwon">
+            <span>Jungwon</span>
+        </button>
+
+        <button onclick="showMember('niki')">
+            <img src="images/niki.jpeg" alt="Ni-ki">
+            <span>Ni-ki</span>
+        </button>
+    </div>
+
+    <div id="member-info" class="member-info">
+        <h3>Click a member to learn more</h3>
+        <p>Select a member to view their description.</p>
+    </div>
+    </section>
+
+
+
+    <!-- SPOTIFY BUTTON -->
+    <section class="cta">
+    <a class="cta-btn" href="https://open.spotify.com/artist/5t5FqBwTcgKTaWmfEbwQY9?si=K8hpZLA6RceouOmsDkKf2Q" target="_blank">
+        Listen on Spotify →
+    </a>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & Built by Pari Mollabashy · SI 539: Web Design - Final Project · 2025</p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MEMBER SWITCHING -->
+    <script>
+        const members = {
+            heeseung: {
+                name: "Heeseung",
+                desc: "Born in 2001, Heeseung is the eldest member of the group and the main vocalist. His vocal prowess combined with his dancing skills, powerful stage presence, and extensive training experience make him known as the ace of the group."
+            },
+            jay: {
+                name: "Jay",
+                desc: "Jay is known for his powerful, honey-like voice and enthralling stage presence. He is also the mood-maker of the group and known for being extremely passionate and dedicated. Fun fact: Jay is my bias (favorite member), and his birthday is 10 days before mine!"
+            },
+            jake: {
+                name: "Jake",
+                desc: "Jake is known for his husky, alluring voice and golden retriever-like personality. Originally from Australia, Jake decided to pursue his dreams of becoming a singer in Korea and fatefully ended up in ENHYPEN."
+            },
+            sunghoon: {
+                name: "Sunghoon",
+                desc: "Sunghoon is known for his elegance, precision, and stunning visuals. Fun fact: before becoming a K-Pop idol, Sunghoon was a talented figure skater planning to go professional, so fans lovingly refer to him as the ice prince."
+            },
+            sunoo: {
+                name: "Sunoo",
+                desc: "Sunoo is known for his bright vocal tone and expressive performance style. He is an essential member of the group who brings a unique sense of balance, softening the overall dynamic with his warmth, emotional sensitivity, and charm."
+            },
+            jungwon: {
+                name: "Jungwon",
+                desc: "Jungwon is ENHYPEN's leader. Despite being the second-youngest member, he plays the role of a dependable pillar. He is also known for his unique vocal tone and fluid, water-like dancing."
+            },
+            niki: {
+                name: "Ni-ki",
+                desc: "Born in 2005, Nishimura Riki, known professionally as Ni-ki, is the maknae (which means youngest is Korean!) and main dancer of the group. He is most known for his dancing prowess and deep voice. Originally from Japan, he moved to Korea at a young age to chase his dreams."
+            }
+        };
+
+        function showMember(memberKey) {
+            const member = members[memberKey];
+            const container = document.getElementById("member-info");
+
+            container.innerHTML = `
+                <h3>${member.name}</h3>
+                <p>${member.desc}</p>
+            `;
+        }
+    </script>
+
+</body>
+</html>
