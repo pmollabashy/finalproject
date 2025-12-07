@@ -1,7 +1,3 @@
-/* ----------------------------- */
-/* RESET + GLOBAL STYLES         */
-/* ----------------------------- */
-
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -9,8 +5,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fff7ef; /* cream */
-    color: #4a3a32;            /* warm brown */
+    background-color: #fff7ef;
+    color: #4a3a32;
     line-height: 1.6;
     padding-bottom: 4rem;
 }
@@ -25,12 +21,10 @@ img {
     height: auto;
 }
 
-/* ----------------------------- */
-/* NAVBAR                        */
-/* ----------------------------- */
+/* NAVBAR */
 
 header {
-    background-color: #fff2e8; /* soft peachy cream */
+    background-color: #fff2e8;
     border-bottom: 1px solid #f3d8c8;
     padding: 0.75rem 1rem;
     position: sticky;
@@ -66,18 +60,16 @@ header {
 
 .nav-links a.active,
 .nav-links a:hover {
-    background-color: #ffb997; /* peach accent */
+    background-color: #ffb997;
     color: #7a2d19
 }
 
-/* ----------------------------- */
-/* HERO SECTIONS                 */
-/* ----------------------------- */
+/* HERO SECTIONS */
 
 .hero {
     text-align: center;
     padding: 3rem 1.2rem;
-    background-color: #ffe9df; /* peach background */
+    background-color: #ffe9df;
     margin-bottom: 2rem;
 }
 
@@ -94,9 +86,7 @@ header {
     color: #5c4a43;
 }
 
-/* ----------------------------- */
-/* PAGE HEADER (ARTISTS PAGE)    */
-/* ----------------------------- */
+/* PAGE HEADER (ARTISTS PAGE) */
 
 .page-header {
     text-align: center;
@@ -113,13 +103,11 @@ header {
     color: #6d5a52;
 }
 
-/* ----------------------------- */
-/* ARTISTS GRID                  */
-/* ----------------------------- */
+/* ARTISTS GRID */
 
 .artists-grid {
     display: grid;
-    grid-template-columns: 1fr; /* MOBILE FIRST */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 1.5rem;
 }
@@ -128,7 +116,7 @@ header {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 3px 8px rgba(220, 170, 150, 0.22); /* peachy shadow */
+    box-shadow: 0 3px 8px rgba(220, 170, 150, 0.22);
     text-align: center;
     border: 1px solid #f7d8c8;
 }
@@ -150,11 +138,11 @@ header {
     color: #6d5a52;
 }
 
-/* Spotlight button inside the artist card */
+/* Spotlight button */
 .spotlight-btn {
     display: inline-block;
     margin-top: 0.8rem;
-    background-color: #ffb997;   /* peach */
+    background-color: #ffb997;
     color: #7a2d19;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -170,10 +158,7 @@ header {
     transform: translateY(-2px);
 }
 
-
-/* ----------------------------- */
-/* SPOTLIGHT PAGE SECTIONS       */
-/* ----------------------------- */
+/* ENHA SPOTLIGHT PAGE!!! */
 
 .group-info,
 .favorites,
@@ -211,9 +196,7 @@ header {
     color: #3a2a24;
 }
 
-/* ----------------------------- */
-/* MEMBER SELECTOR               */
-/* ----------------------------- */
+/* MEMBER SELECTOR */
 
 .member-row {
     display: flex;
@@ -272,9 +255,7 @@ header {
     box-shadow: 0 2px 6px rgba(230, 170, 150, 0.18);
 }
 
-/* ----------------------------- */
-/* CTA BUTTON                    */
-/* ----------------------------- */
+/* CTA BUTTON */
 
 .cta {
     text-align: center;
@@ -284,7 +265,7 @@ header {
 .cta-btn {
     display: inline-block;
     margin-top: 0.8rem;
-    background-color: #ffb997;   /* peach */
+    background-color: #ffb997;
     color: #7a2d19;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -300,42 +281,34 @@ header {
     transform: translateY(-2px);
 }
 
-/* SONG LIST LINKS – ACCESSIBLE PEACH-BROWN TONES */
+/* SONG LIST LINKS */
 .song-list a,
 .song-list a:link {
-    color: #7a2d19;              /* dark, high-contrast warm color */
+    color: #7a2d19;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
-/* VISITED STATE – slightly deeper but still clearly visible */
 .song-list a:visited {
     color: #5e2112;
 }
 
-/* HOVER STATE – still dark + underline for clarity */
 .song-list a:hover {
-    color: #9b3a21;              /* still dark enough */
-    text-decoration: underline;  /* non-color cue */
+    color: #9b3a21;
+    text-decoration: underline;
 }
 
-/* ACTIVE (mouse down) – just a slight shift, still dark */
 .song-list a:active {
     color: #4a170c;
 }
 
-/* Optional: spacing for list items */
 .song-list li {
     margin-bottom: 0.4rem;
     font-size: 1rem;
 }
 
-
-
-/* ----------------------------- */
-/* FOOTER                        */
-/* ----------------------------- */
+/* FOOTER */
 
 footer {
     text-align: center;
@@ -347,9 +320,7 @@ footer {
     border-top: 1px solid #f3d2c3;
 }
 
-/* ----------------------------- */
-/* RESPONSIVE BREAKPOINTS        */
-/* ----------------------------- */
+/* RESPONSIVTY */
 
 @media (min-width: 600px) {
     .artists-grid {
@@ -368,7 +339,7 @@ footer {
     }
 
     .artists-grid .artist-card:first-child {
-        grid-column: 1 / -1; /* spans across all columns */
+        grid-column: 1 / -1;
     }
 
     .hero h2 {
@@ -385,5 +356,13 @@ footer {
     }
 }
 
-
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    * {
+        transition: none;
+        animation: none;
+    }
+}
 
